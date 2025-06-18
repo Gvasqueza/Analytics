@@ -1,0 +1,135 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Café Moderno • Tu rincón favorito</title>
+    <meta name="description" content="Deléitate con nuestros cafés artesanales y ambiente acogedor." />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a href="#" class="logo">☕ Café Moderno</a>
+            <nav class="nav" id="nav">
+                <a href="#home">Inicio</a>
+                <a href="#menu">Menú</a>
+                <a href="#about">Nosotros</a>
+                <a href="#contact">Contacto</a>
+            </nav>
+            <div class="actions">
+                <button id="themeToggle" class="btn-icon" aria-label="Toggle tema">🌓</button>
+                <button id="navToggle" class="btn-icon nav-toggle" aria-label="Abrir menú">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero__overlay"></div>
+        <div class="container hero__content">
+            <h1>Bienvenido a<br />Café Moderno</h1>
+            <p>Artesanía, sabor y ambiente para tus mejores momentos.</p>
+            <a href="#menu" class="btn btn--primary">Ver Menú</a>
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+        <div class="container">
+            <h2 class="section-title">Nuestro Menú</h2>
+            <div class="menu__grid">
+                <div class="menu__item">
+                    <img src="https://via.placeholder.com/200" alt="Espresso" />
+                    <div class="menu__info">
+                        <h3>Espresso</h3>
+                        <span class="price">S/8</span>
+                    </div>
+                </div>
+                <div class="menu__item">
+                    <img src="https://via.placeholder.com/200" alt="Cappuccino" />
+                    <div class="menu__info">
+                        <h3>Cappuccino</h3>
+                        <span class="price">S/12</span>
+                    </div>
+                </div>
+                <div class="menu__item">
+                    <img src="https://via.placeholder.com/200" alt="Latte" />
+                    <div class="menu__info">
+                        <h3>Latte</h3>
+                        <span class="price">S/13</span>
+                    </div>
+                </div>
+                <div class="menu__item">
+                    <img src="https://via.placeholder.com/200" alt="Cold Brew" />
+                    <div class="menu__info">
+                        <h3>Cold Brew</h3>
+                        <span class="price">S/15</span>
+                    </div>
+                </div>
+                <div class="menu__item">
+                    <img src="https://via.placeholder.com/200" alt="Matcha Latte" />
+                    <div class="menu__info">
+                        <h3>Matcha Latte</h3>
+                        <span class="price">S/14</span>
+                    </div>
+                </div>
+                <div class="menu__item">
+                    <img src="https://via.placeholder.com/200" alt="Pastelería" />
+                    <div class="menu__info">
+                        <h3>Pastelería</h3>
+                        <span class="price">Desde S/5</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container about__inner">
+            <div class="about__text">
+                <h2>Nuestra Historia</h2>
+                <p>
+                    Desde 2020, combinamos granos de origen ético con técnicas de barismo de vanguardia.
+                    Un espacio diseñado para que cada sorbo sea una experiencia memorable.
+                </p>
+                <a href="#contact" class="btn btn--secondary">Reserva tu mesa</a>
+            </div>
+            <img src="https://via.placeholder.com/500x350" alt="Interior cafetería" />
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container contact__inner">
+            <div class="contact__info">
+                <h2>Contáctanos</h2>
+                <p>Av. Principal 123, San Martín de Porres, Lima</p>
+                <p>📞 (01) 234-5678</p>
+                <p>✉️ hola@cafemoderno.com</p>
+                <div class="social">
+                    <a href="#" aria-label="Instagram">📸</a>
+                    <a href="#" aria-label="Facebook">👍</a>
+                    <a href="#" aria-label="WhatsApp">💬</a>
+                </div>
+            </div>
+            <form class="contact__form">
+                <input type="text" placeholder="Tu nombre" required />
+                <input type="email" placeholder="Tu correo" required />
+                <textarea placeholder="Tu mensaje" rows="4" required></textarea>
+                <button type="submit" class="btn btn--primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Café Moderno. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
